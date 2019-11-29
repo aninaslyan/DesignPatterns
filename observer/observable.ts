@@ -1,13 +1,16 @@
+import { Observers, Observer } from '../types';
+
 class Observable {
+    observers: Observers = [];
+
     constructor() {
-        this.observers = [];
     }
 
-    subscribe(f) {
+    subscribe(f: Observer) {
         this.observers.push(f);
     }
 
-    unsubscribe(f) {
+    unsubscribe(f: Observer) {
         this.observers.forEach((subscriber, index) => {
             if (subscriber === f) {
                 this.observers.splice(index, 1);
@@ -15,7 +18,7 @@ class Observable {
         })
     }
 
-    notify(data) {
+    notify(data: string) {
         this.observers.forEach(observer => observer(data));
     }
 }
