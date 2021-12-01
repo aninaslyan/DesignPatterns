@@ -1,24 +1,30 @@
-import { Observers, Observer } from '../types';
+import { IObserver, IObservable } from './interfaces/interfaces';
 
-class Observable {
-    observers: Observers = [];
+export class Observable implements IObservable {
+    public observers: IObserver[] = [];
 
-    constructor() {
+    constructor() { }
+
+    public subscribe(observer: IObserver): void {
+        if (this.observers.includes(observer)) {
+            console.log('This observer has been already attached');
+            return;
+        }
+
+        this.observers.push(observer);
     }
 
-    subscribe(f: Observer) {
-        this.observers.push(f);
+    public unsubscribe(observer: IObserver): void {
+        const observerIndex = this.observers.indexOf(observer);
+        if (observerIndex === -1) {
+            console.log('This observer doesn\'t exist');
+            return;
+        }
+
+        this.observers.splice(observerIndex, 1);
     }
 
-    unsubscribe(f: Observer) {
-        this.observers.forEach((subscriber, index) => {
-            if (subscriber === f) {
-                this.observers.splice(index, 1);
-            }
-        })
-    }
-
-    notify(data: string) {
-        this.observers.forEach(observer => observer(data));
+    public notify(data: string): void {
+        this.observers.forEach(observer => observer.update(this, data));
     }
 }
