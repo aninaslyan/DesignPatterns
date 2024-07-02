@@ -1,0 +1,22 @@
+{
+  "name": "designpatterns",
+  "version": "1.0.0",
+  "description": "Implementation of some useful design patterns with TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aninaslyan/DesignPatterns.git"
+  },
+  "author": "Ani Naslyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aninaslyan/DesignPatterns/issues"
+  },
+  "homepage": "https://github.com/aninaslyan/DesignPatterns#readme",
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  }
+}
