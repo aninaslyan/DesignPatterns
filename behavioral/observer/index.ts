@@ -51,8 +51,6 @@ unsubscribeP2Btn?.addEventListener('click', () => observerList.unsubscribe(updat
 subscribeP3Btn?.addEventListener('click', () => observerList.subscribe(updateP3Observer));
 unsubscribeP3Btn?.addEventListener('click', () => observerList.unsubscribe(updateP3Observer));
 
-input?.addEventListener('keyup', (e) => {
-    debugger
-    // @ts-ignore
-    observerList.notify(e.target.value);
+input?.addEventListener('keyup', (e: Event) => {
+    observerList.notify((e.target as HTMLInputElement).value);
 });

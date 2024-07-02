@@ -5,7 +5,9 @@ import { IObservable, IObserver } from "./interfaces/interfaces";
 export class Observer implements IObserver {
     constructor(
         private subscription: (data: string) => void,
-    ) { }
+    ) {
+        debugger
+     }
 
     public update(observable: IObservable, data: string): void {
         if (observable instanceof Observable) {
