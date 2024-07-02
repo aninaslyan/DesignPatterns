@@ -10,7 +10,7 @@ export class Observable implements IObservable {
             console.log('This observer has been already attached');
             return;
         }
-
+debugger;
         this.observers.push(observer);
     }
 

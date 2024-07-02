@@ -44,14 +44,15 @@ observerList.subscribe(updateP3Observer);
 
 /* Event listeners */
 
-subscribeP1Btn.addEventListener('click', () => observerList.subscribe(updateP1Observer));
-unsubscribeP1Btn.addEventListener('click', () => observerList.unsubscribe(updateP1Observer));
-subscribeP2Btn.addEventListener('click', () => observerList.subscribe(updateP2Observer));
-unsubscribeP2Btn.addEventListener('click', () => observerList.unsubscribe(updateP2Observer));
-subscribeP3Btn.addEventListener('click', () => observerList.subscribe(updateP3Observer));
-unsubscribeP3Btn.addEventListener('click', () => observerList.unsubscribe(updateP3Observer));
+subscribeP1Btn?.addEventListener('click', () => observerList.subscribe(updateP1Observer));
+unsubscribeP1Btn?.addEventListener('click', () => observerList.unsubscribe(updateP1Observer));
+subscribeP2Btn?.addEventListener('click', () => observerList.subscribe(updateP2Observer));
+unsubscribeP2Btn?.addEventListener('click', () => observerList.unsubscribe(updateP2Observer));
+subscribeP3Btn?.addEventListener('click', () => observerList.subscribe(updateP3Observer));
+unsubscribeP3Btn?.addEventListener('click', () => observerList.unsubscribe(updateP3Observer));
 
-input.addEventListener('keyup', (e) => {
+input?.addEventListener('keyup', (e) => {
+    debugger
     // @ts-ignore
     observerList.notify(e.target.value);
 });

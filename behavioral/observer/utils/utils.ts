@@ -1,3 +1,5 @@
-export function changeTextContent(text: string, element: Element) {
-    element.textContent = text;
+export function changeTextContent(text: string, element: Element | null) {
+    if (element) {
+        element.textContent = text;
+    }
 }
