@@ -32,5 +32,7 @@ Design patterns are typical solutions to common problems in software design. Eac
   - Template Method
   - Visitor
 
-For running **TypeScript** codes type `tsc` in terminal. You need to have TypeScript installed globally. Corresponding dist folder will appear according to tsconfig.json configuration which will contain all compiled .ts files. These javascript files can be used by the browser. Open the destination path into browser to see the results.
-For running directories which contain multiple .ts files, webpack configuration will be needed.
+For executing **TypeScript** codes compile the code by running `npm run compile` in terminal. Corresponding dist folder will appear according to tsconfig.json configuration which will contain .js files which were compiled from .ts files. These javascript files can be used by the browser.  
+Execute `npm run serve` to start the server. Open the destination path into browser to see the results.
+OR  
+View and Edit (Fork) online via [Stackblitz live example](https://stackblitz.com/github/aninaslyan/DesignPatterns)
