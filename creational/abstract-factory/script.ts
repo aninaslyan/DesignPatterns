@@ -1,3 +1,5 @@
+// Abstract Factory is used to create families of related or dependent objects without specifying their concrete classes
+
 interface Chair { // Product
     sitOn(): void;
 }
@@ -85,7 +87,6 @@ class FurnitureStore {
 const victorianFurnitureStore = new FurnitureStore(new VictorianFurnitureFactory());
 console.log('Victorian furniture factory.');
 victorianFurnitureStore.displayFurniture();
-
 
 const modernFurnitureStore = new FurnitureStore(new ModernFurnitureFactory());
 console.log('Modern furniture factory.');

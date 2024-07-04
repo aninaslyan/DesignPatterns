@@ -1,3 +1,6 @@
+// Factory Method is used to define an interface for creating a single product
+// Factory method pattern is a simpler version of Abstract factory pattern.
+
 interface Delivery {
     deliver(): void;
 }
