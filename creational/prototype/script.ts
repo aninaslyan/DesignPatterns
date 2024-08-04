@@ -1,3 +1,5 @@
+// The intent of the Prototype pattern is to create new objects by copying an existing object, meaning create a single object and never use the 'new' keyword again.
+
 interface Prototype {
     clone(): Prototype;
 }
@@ -10,7 +12,7 @@ class Circle implements Prototype {
     }
 
     public clone(): Circle {
-        return new Circle(this.radius); // Shallow copy
+        return new Circle(this.radius); // Shallow copy, should be deep copy if needed
     }
 
     public draw(): void {

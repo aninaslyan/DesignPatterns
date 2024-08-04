@@ -1,3 +1,5 @@
+// We may want to create lots of same class objects with similar properties, but we don't want to repeat all the steps.
+
 class House {
     private walls = 'brick';
     private roof = 'tile';
