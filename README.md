@@ -14,10 +14,10 @@ Design patterns are typical solutions to common problems in software design. Eac
   - Decorator
   - Adapter
   - Facade
-  - Composite
   - Proxy
-  - Bridge
-  - Flyweight
+  - Composite - not implemented yet
+  - Bridge - not implemented yet
+  - Flyweight - not implemented yet
 
 
 - **Behavioral** - take care of effective communication between objects and make the design more flexible and reusable.
@@ -26,11 +26,11 @@ Design patterns are typical solutions to common problems in software design. Eac
   - Iterator
   - Command
   - Chain of Responsibility
-  - State
-  - Mediator
-  - Memento
-  - Template Method
-  - Visitor
+  - Mediator - not implemented yet
+  - Memento - not implemented yet
+  - State - not implemented yet
+  - Template Method - not implemented yet
+  - Visitor - not implemented yet
 
 For executing **TypeScript** codes compile the code by running `npm run compile` in terminal. Corresponding dist folder will appear according to tsconfig.json configuration which will contain .js files which were compiled from .ts files. These javascript files can be used by the browser.  
 Execute `npm run serve` to start the server. Open the destination path into browser to see the results.
