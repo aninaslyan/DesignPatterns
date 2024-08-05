@@ -12,7 +12,8 @@
   },
   "include": [
     "./behavioral/**/*.ts",
-    "./creational/**/*.ts"
+    "./creational/**/*.ts",
+    "./structural/**/*.ts"
   ],
   "exclude": [
     "node_modules",
